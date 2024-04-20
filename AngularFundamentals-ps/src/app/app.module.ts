@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { CatalogComponent } from './catalog/catalog.component';
+import { SiteHeaderComponent } from './site-header/site-header.component';
 
 //modules are used to group content into self contained modules.
 // if you do not add the module here, angular will not know what you are
@@ -14,7 +15,8 @@ import { CatalogComponent } from './catalog/catalog.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    CatalogComponent
+    CatalogComponent,
+    SiteHeaderComponent
   ],
   imports: [
     BrowserModule, HttpClientModule,
