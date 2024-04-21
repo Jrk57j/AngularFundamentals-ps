@@ -9,7 +9,7 @@ import { IProduct } from './product.model';
 })
 
 export class CatalogComponent {
-  products: IProduct[];
+  products?: IProduct[];
   filter: string = '';
 
   constructor() {
@@ -40,8 +40,8 @@ export class CatalogComponent {
         name: "Articulated Arm",
         imageName: "arm-articulated-claw.png",
         category: "Arms",
-        price: 275,
-        discount: 0
+        price: 275.0,
+        discount: 0.50
       },
       {
         id: 2,
@@ -72,6 +72,6 @@ export class CatalogComponent {
 
   getFilteredProducts() {
     return this.filter === '' ? this.products :
-      this.products.filter((product) => product.category === this.filter);
+      this.products?.filter((product) => product.category === this.filter);
   }
 }
