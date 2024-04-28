@@ -70,7 +70,8 @@
               "buildTarget": "AngularFundamentals-ps:build:production"
             },
             "development": {
-              "buildTarget": "AngularFundamentals-ps:build:development"
+              "buildTarget": "AngularFundamentals-ps:build:development",
+              "proxyConfig": "C:\\Users\\jitwa\\source\\repos\\AngularFundamentals-ps\\AngularFundamentals-ps\\src\\proxy.conf.json"
             }
           },
           "defaultConfiguration": "development",
